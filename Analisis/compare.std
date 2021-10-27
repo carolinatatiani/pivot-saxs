@@ -1,0 +1,13 @@
+plot 'exp.dat' u 1:2
+replot 'theo.dat' title 'SAXS-Factor'
+replot 'pdbmodel00.fit' u 1:4 title 'Crysol'
+set log y
+set xlabel "q(k)"
+set ylabel "log(I(q))
+#set style line 1 lc rgb '#6a5acd'
+#set style line 2 lc rgb '#ff6347'
+set title "chi^2=CHI" 
+set term jpeg size 1024,720 enhanced font 'Helvetica,20' linewidth 2
+set output "comp_profile.jpeg"
+replot
+quit
