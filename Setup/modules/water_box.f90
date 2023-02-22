@@ -1,7 +1,8 @@
 Module water_box
   use variables
   implicit none
-  real(dp), parameter :: water_box_size=119.7, thickness=3.d0, close_dist=3.5
+  real(dp), parameter :: water_box_size=119.7, thickness=3.d0,
+												 close_dist=3.5
   integer, parameter  :: n_waters=60655
   
 contains
